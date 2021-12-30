@@ -2,13 +2,17 @@
 - hosts: all
   become: yes
   tasks: 
-  - name: install git
+  - name: I want to install git on ubunto node
     apt:
        name: git
        state: present
 
-  - name: i want install git
+  - name: I want install git on ubunto node
     apt:
       name: tree
       state: present
-
+  
+  - name: I want to install wget on ubunto node
+    apt:
+      name: wget
+      state: present
