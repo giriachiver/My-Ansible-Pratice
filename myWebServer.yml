@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  taska: 
+  - name: I want to install apache server on ubunto
+    apt: 
+       name: apache2
+       state: present 
